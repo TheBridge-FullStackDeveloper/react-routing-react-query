@@ -26,7 +26,7 @@ npm create vite@latest react-countries -- --template react
 
 2. Install required dependencies:
 ```bash
-npm install @tanstack/react-query react-router-dom
+npm install @tanstack/react-query react-router
 ```
 
 3. Set up the router configuration in `App.jsx`

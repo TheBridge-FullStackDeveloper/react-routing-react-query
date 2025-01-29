@@ -6,7 +6,7 @@ A React application that allows users to explore information about different cou
 
 - Browse a comprehensive list of all countries
 - View detailed information about each country
-- Responsive navigation with a persistent navbar
+- Navigation with a persistent navbar
 - Client-side routing with React Router
 - Efficient data fetching and caching with React Query
 

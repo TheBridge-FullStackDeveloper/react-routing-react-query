@@ -1,0 +1,19 @@
+.containbanderas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(auto);
+    gap: 1rem;
+}
+.card{
+    width:100%;
+    max-width: 250px;
+    text-align: center;
+    color:white
+}
+.card img {
+    width:100px
+}
+.details img{
+    width: 200px;
+    margin-top:2rem
+}

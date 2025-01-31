@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import getBanderas from "../api/getBanderas";
-import Bandera from "../components/Bandera";
+import Bandera from "../components/Banderas";
 import "../style/banderas.css"
 import { Link } from "react-router";
 

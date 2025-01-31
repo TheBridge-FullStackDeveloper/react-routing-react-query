@@ -1,8 +1,8 @@
 import "./App.css";
 import { Route, Routes } from "react-router";
-import Home from "./routers/Home";
-import Banderas from "./routers/Banderas";
-import BanderasDetails from "./components/BanderaDetails";
+import Home from "./routers/RouterHome";
+import Banderas from "./routers/RouterBanderas";
+import RouterBanderaDetails from "./routers/RouterBanderaDetails";
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}>
           <Route path="banderas" element={<Banderas />}/>
-          <Route path="banderas/:name" element={<BanderasDetails/>}/>
+          <Route path="banderas/:name" element={<RouterBanderaDetails/>}/>
         </Route>
       </Routes>
     </>

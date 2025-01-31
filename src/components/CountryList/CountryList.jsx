@@ -12,6 +12,7 @@ const fetchCountries = async () => {
 };
 
 function CountryList() {
+
     const { data, error, isLoading } = useQuery({
       queryKey: ['countries'],
       queryFn: fetchCountries, 
@@ -23,13 +24,13 @@ function CountryList() {
     if (error) return <div>Error: {error.message}</div>;
   
     return (
-      <div>
+      <>
         <div className="country-items">
           {data.map((country) => (
             <CountryItem key={country.cca3} country={country} />
           ))}
         </div>
-      </div>
+      </>
     );
   }
 

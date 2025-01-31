@@ -55,12 +55,7 @@ input {
   padding: 2em;
 }
 
-.country-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
-}
+
 
 
 .country-item {

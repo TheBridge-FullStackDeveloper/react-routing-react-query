@@ -1,34 +1,25 @@
-
+/* styles/navbar.css */
 nav {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  nav h1 {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 1.5em;
-  }
-  
-  nav a {
-    color: white;
-    padding: 10px 20px;
-  }
-  
-  nav div {
-    margin-right: 20px;
-  }
-  
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+}
 
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-  
-    nav h1, nav div {
-      text-align: center;
-      padding: 10px 0;
-    }
-  }
-  
+nav a {
+  text-decoration: none;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

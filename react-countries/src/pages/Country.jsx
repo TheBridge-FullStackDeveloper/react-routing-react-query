@@ -11,12 +11,13 @@ const fetchCountry = async (id) => {
 const Country = () => {
   const { id } = useParams();
 
-  const { data: country, error, isLoading } = useQuery(['country', id], () => fetchCountry(id), {
+  const { data: country, error, isLoading } = useQuery({
+    queryKey: ['country', id],  
+    queryFn: () => fetchCountry(id),  
     staleTime: 1000 * 60 * 10  
   });
 
   if (isLoading) return <div>Loading...</div>;
-
   if (error) return <div>An error occurred: {error.message}</div>;
 
   return (

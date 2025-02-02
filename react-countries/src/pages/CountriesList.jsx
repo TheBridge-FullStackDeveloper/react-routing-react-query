@@ -1,9 +1,9 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { fetchAllCountries } from '../api/countryAPI';  
 import { Link } from 'react-router-dom';
+import { fetchAllCountries } from '../api/countryAPI';
 
-const Countries = () => {
+const CountriesList = () => {
   const { data: countries, error, isLoading } = useQuery({
     queryKey: ['countries'],
     queryFn: fetchAllCountries
@@ -15,9 +15,9 @@ const Countries = () => {
   return (
     <div>
       <h1>Countries</h1>
-      {countries && countries.map(country => (
+      {countries.map(country => (
         <div key={country.cca3}>
-          <Link to={`/country/${country.cca3}`}>
+          <Link to={`/country/${country.cca3}`}> {}
             {country.name.common}
           </Link>
         </div>
@@ -26,4 +26,4 @@ const Countries = () => {
   );
 };
 
-export default Countries;
+export default CountriesList;
